@@ -5,7 +5,9 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
+  ingressClassName: nginx
   rules:
+  - host: giropops.duckdns.org
   - http:
       paths:
       - path: /
